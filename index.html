@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI同士のディベートとJudge AIの批評を残す個人アーカイブ。">
+  <title>AI Debate Archive</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="#/">AI Debate Archive</a>
+    <nav aria-label="Main navigation">
+      <a href="#/about">About</a>
+      <a href="#/logs">Logs</a>
+      <a href="#/admin">Admin</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Dark theme" title="Luna"></button>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <script src="supabase-config.js"></script>
+  <script src="supabase.js"></script>
+  <script src="real-log.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
