@@ -50,9 +50,13 @@ p { margin:0 0 1rem; }
 .prose > section > h2 { font-size:1.2rem; }
 .prose p { margin-bottom:1.3rem; }
 .prose ul { padding-left:1.2rem; }
-.detail-meta { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:1rem; padding:1rem 0 2rem; border-bottom:1px solid var(--line); margin-bottom:2rem; }
+.detail-meta { display:grid; grid-template-columns:minmax(0,35fr) minmax(0,30fr) minmax(0,15fr) minmax(0,20fr); gap:1rem; padding:1rem 0 2rem; border-bottom:1px solid var(--line); margin-bottom:2rem; }
 .detail-meta dt { color:var(--muted); font-size:.78rem; }
-.detail-meta dd { margin:0; font-weight:700; }
+.detail-meta dd { margin:0; font-weight:700; overflow-wrap:anywhere; }
+.detail-meta .model { white-space:normal; overflow-wrap:anywhere; }
+.detail-meta .participants-meta dd { display:flex; flex-direction:column; gap:.15rem; }
+.participant-line { display:block; overflow-wrap:anywhere; }
+.participant-label { margin-right:.25rem; }
 .turn { margin:0 0 2.8rem; padding:1.35rem 1.25rem 1.25rem; background:var(--debate-surface); border-radius:14px; }
 .turn-speaker { margin-bottom:.7rem; font-size:.9rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; }
 .turn-body { white-space:pre-wrap; overflow-wrap:anywhere; font-size:1.08rem; line-height:1.9; }
@@ -85,6 +89,12 @@ input, textarea, select { width:100%; padding:.55rem .65rem; background:var(--su
 textarea { min-height:230px; resize:vertical; line-height:1.6; }
 .admin-actions { display:flex; flex-wrap:wrap; gap:.75rem; margin:1rem 0 2rem; }
 .primary { border-color:var(--accent); }
+.admin-actions label.primary { display:inline-flex; align-items:center; cursor:pointer; padding:.55rem .8rem; border:1px solid var(--accent); color:inherit; }
+.admin-actions label[for="saved-folder-input"] { display:inline-flex; align-items:center; cursor:pointer; padding:.55rem .8rem; border:1px solid var(--line); color:inherit; }
+.saved-import-actions { align-items:center; }
+.copy-import-path { margin-left:.45rem; padding:.15rem .4rem; border:1px solid var(--line); color:inherit; background:transparent; cursor:pointer; }
+.saved-conversation-row { width:100%; border:0; border-bottom:1px solid var(--line); background:transparent; color:inherit; text-align:left; cursor:pointer; }
+.saved-conversation-row > span:first-child { display:flex; flex-direction:column; gap:.25rem; }
 .preview { border-top:1px solid var(--line); padding-top:1.5rem; }
 .admin-archive { margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--line); }
 .admin-archive h2 { margin:0; font-size:1.15rem; }
