@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://debate.kyotomalmal25.workers.dev/sitemap.xml
